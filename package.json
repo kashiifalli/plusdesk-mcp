@@ -1,0 +1,31 @@
+{
+  "name": "plusdesk-mcp",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "ISC",
+  "description": "MCP server for PlusDesk (PulseDesk) project management",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  },
+  "type": "module",
+  "bin": {
+    "plusdesk-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ]
+}
